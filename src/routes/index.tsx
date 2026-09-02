@@ -282,6 +282,13 @@ function Portfolio() {
                   <Button asChild size="lg" variant="outline">
                     <a href="#work">View selected impact</a>
                   </Button>
+                  <Button asChild size="lg" variant="ghost">
+                    <a href={RESUME_URL} download>
+                      <Download className="size-4" aria-hidden="true" />
+                      Download resume (PDF)
+                    </a>
+                  </Button>
+
                 </div>
 
                 <p className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
