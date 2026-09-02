@@ -25,7 +25,12 @@ import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-const RESUME_URL = "/Mpho-Precious-Mashigo-Resume.pdf";
+import cvAsset from "@/assets/mpho-cv.pdf.asset.json";
+
+const RESUME_URL = cvAsset.url;
+const EMAIL = "mphomash27@gmail.com";
+const LINKEDIN_URL = "https://www.linkedin.com/in/precious-mashigo-b68422200/";
+const GITHUB_URL = "https://github.com/MphoPreciousMashigo";
 
 export const Route = createFileRoute("/")({
   head: () => ({
