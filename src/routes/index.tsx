@@ -6,6 +6,7 @@ import {
   Bot,
   Boxes,
   CheckCircle2,
+  Download,
   Cpu,
   Gauge,
   Mail,
@@ -23,6 +24,8 @@ import {
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+
+const RESUME_URL = "/Mpho-Precious-Mashigo-Resume.pdf";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -576,6 +579,12 @@ function Portfolio() {
                   <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener">
                     LinkedIn profile
                     <ArrowUpRight className="size-4" aria-hidden="true" />
+                  </a>
+                </Button>
+                <Button asChild size="lg" variant="ghost">
+                  <a href={RESUME_URL} download>
+                    <Download className="size-4" aria-hidden="true" />
+                    Download resume (PDF)
                   </a>
                 </Button>
               </div>
