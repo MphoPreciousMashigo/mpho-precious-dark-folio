@@ -66,109 +66,118 @@ const NAV = [
 ];
 
 const METRICS = [
-  { value: "8+", label: "Years in retail operations" },
-  { value: "120+", label: "Store workflows optimised" },
-  { value: "40%", label: "Average manual effort removed" },
-  { value: "24/7", label: "Monitored automation coverage" },
+  { value: "8+", label: "Years in operations, assets & QA" },
+  { value: "180", label: "Property portfolio managed" },
+  { value: "500+", label: "Tenants & stakeholders supported" },
+  { value: "R100k+", label: "Monthly procurement supported" },
 ];
 
 const SERVICES = [
   {
-    icon: Store,
-    title: "Retail Operations Engineering",
-    body: "Store-to-head-office process design: replenishment, shrinkage control, stock accuracy and shift-level execution playbooks.",
-    points: ["Process mapping & SOPs", "Store readiness audits", "Ops KPI frameworks"],
-  },
-  {
-    icon: Bot,
-    title: "Intelligent Automation (RPA + AI)",
-    body: "Automating high-volume back-office work — from supplier reconciliation to reporting packs — with human-in-the-loop controls.",
-    points: ["Bot design & orchestration", "Document/OCR pipelines", "Exception handling"],
-  },
-  {
-    icon: BarChart3,
-    title: "Operational Intelligence",
-    body: "Turning POS, WMS and ERP data into dashboards leaders actually use for daily trading decisions.",
-    points: ["Trading dashboards", "Forecast & variance views", "Data quality guardrails"],
+    icon: Workflow,
+    title: "ServiceNow & ITSM",
+    body: "Platform fundamentals through to incident lifecycle: impact, urgency, priority, assignment groups and clean record hygiene.",
+    points: ["Incident & request management", "Problem & change concepts", "Lists, records, modules"],
   },
   {
     icon: Network,
-    title: "Systems Integration",
-    body: "Connecting fragmented retail estates so data flows once, cleanly, from till to ledger.",
-    points: ["API & middleware design", "Master data alignment", "Legacy modernisation"],
+    title: "Business Process Analysis",
+    body: "Requirements gathering, process documentation and root-cause work on recurring operational issues.",
+    points: ["Requirements & BRDs", "Process documentation", "Root-cause analysis"],
+  },
+  {
+    icon: BarChart3,
+    title: "Data Analytics & BI",
+    body: "Expert Excel data cleaning, validation and operational reporting, moving toward Power BI dashboards.",
+    points: ["Data cleaning & validation", "Pivot tables & tracking systems", "Operational reporting"],
+  },
+  {
+    icon: Boxes,
+    title: "Enterprise Business Systems",
+    body: "Hands-on administration in MRI Software, TPN and CYBEL across property, tenant and compliance processes.",
+    points: ["MRI Software — 4 years", "TPN — 4 years", "CYBEL — 2 years"],
+  },
+  {
+    icon: Bot,
+    title: "AI & Digital Transformation",
+    body: "AI fundamentals, 4IR technologies and practical automation workflows applied to everyday business admin.",
+    points: ["AI tools & prompting", "Automation workflows", "Digital productivity"],
   },
   {
     icon: ShieldCheck,
-    title: "Governance & Compliance",
-    body: "Auditable automation: access control, change management and evidence trails that survive review.",
-    points: ["Control matrices", "Audit-ready logging", "Risk & failover design"],
-  },
-  {
-    icon: Workflow
-,
-    title: "Transformation Delivery",
-    body: "Leading cross-functional rollouts across regions with adoption, training and measurable handover.",
-    points: ["Roadmaps & business cases", "Change enablement", "Benefit tracking"],
+    title: "Quality, Compliance & Reporting",
+    body: "Audit support, compliance documentation and structured reporting built for management review.",
+    points: ["Internal audit support", "Compliance documentation", "Monthly management reporting"],
   },
 ];
 
 const CASES = [
   {
-    tag: "Placeholder case study",
-    title: "Replenishment Intelligence for a National Grocery Chain",
+    tag: "Professional experience",
+    title: "Office Manager — Bobjack International Ventures (2022 – Present)",
     context:
-      "Manual store ordering across a large footprint caused inconsistent availability and excess markdown.",
+      "A growing operation needed structured workflows, reliable records and reporting that management could act on.",
     action:
-      "Designed a demand-signal driven replenishment workflow with automated exception queues and store-level accountability views.",
+      "Coordinated four business functions supporting eight employees and built Excel-based tracking and reporting systems for decision-making.",
     results: [
-      "Availability lifted from 91% to 97%",
-      "Markdown waste reduced 18%",
-      "Ordering time per store cut by 6 hours weekly",
+      "6 monthly management reports delivered",
+      "R100,000+ monthly procurement supported",
+      "50 monthly invoices processed accurately",
     ],
-    stack: ["SAP Retail", "Power BI", "Power Automate", "SQL"],
+    stack: ["Excel (Expert)", "Microsoft 365", "Google Workspace", "Procurement"],
   },
   {
-    tag: "Placeholder case study",
-    title: "Back-Office Automation Programme",
+    tag: "Professional experience",
+    title: "Asset Manager — Louya Properties (2018 – 2021)",
     context:
-      "Finance and supply-chain teams spent thousands of hours a year on invoice matching and manual reporting.",
+      "A 180-property portfolio required disciplined records, compliance documentation and responsive service-request handling.",
     action:
-      "Delivered an automation portfolio of 14 attended and unattended bots with a shared exception-handling framework.",
+      "Managed property databases, lease records and operational documentation while resolving tenant service requests through structured business systems.",
     results: [
-      "11,000+ manual hours returned annually",
-      "Invoice match accuracy at 99.2%",
-      "Month-end reporting cycle shortened by 3 days",
+      "180-property portfolio managed",
+      "500+ tenants and stakeholders supported",
+      "4 years' hands-on MRI Software and TPN use",
     ],
-    stack: ["UiPath", "Python", "Azure", "Snowflake"],
+    stack: ["MRI Software", "TPN", "Compliance", "Service requests"],
   },
   {
-    tag: "Placeholder case study",
-    title: "Store Operations Command Centre",
+    tag: "Capstone project — in progress",
+    title: "Retail Operations Analytics & Intelligent Automation Capstone",
     context:
-      "Regional managers lacked a single, trusted view of trading, stock and compliance performance.",
+      "Historical retail transaction data hid underperforming regional metrics and stock-outs on high-margin lines.",
     action:
-      "Built a unified operations command centre with daily trading scorecards, alerting and drill-down to store and SKU level.",
+      "Mapped margin and performance data into a reporting framework linked to a custom ServiceNow-style workflow, with an AI text-classification concept to read unstructured support requests, predict urgency and route tickets to the right fulfilment group.",
     results: [
-      "Single source of truth across 200+ sites",
-      "Issue response time down 45%",
-      "Adoption above 85% within one quarter",
+      "Margin mapping and revenue-leakage views",
+      "Ticket urgency prediction concept via Google AI",
+      "Automated routing to fulfilment groups",
     ],
-    stack: ["Power BI", "Databricks", "REST APIs", "Teams alerts"],
+    stack: ["ServiceNow", "Excel / Power BI", "Google AI", "NLP classification"],
   },
 ];
 
 const STACK = [
-  { icon: Cpu, group: "Automation", items: ["UiPath", "Power Automate", "Python", "n8n"] },
-  { icon: Boxes, group: "Retail Platforms", items: ["SAP Retail", "Oracle RMS", "WMS", "POS"] },
-  { icon: BarChart3, group: "Data & BI", items: ["Power BI", "SQL", "Databricks", "Excel modelling"] },
-  { icon: ScanBarcode, group: "Ops Practice", items: ["Lean Six Sigma", "Agile", "ITIL", "Process mining"] },
+  { icon: Workflow, group: "ServiceNow & ITSM", items: ["Incident Management", "Request & Change", "Assignment groups", "CSA (in progress)"] },
+  { icon: Boxes, group: "Business Systems", items: ["MRI Software", "TPN", "CYBEL", "Microsoft 365"] },
+  { icon: BarChart3, group: "Data & BI", items: ["Excel — Expert", "Power BI — Basic", "Data validation", "Business metrics"] },
+  { icon: Cpu, group: "AI & Development", items: ["AI fundamentals", "Automation workflows", "Google AI Certificate track", "4IR technologies"] },
+];
+
+const CREDENTIALS = [
+  "Artificial Intelligence in the 4IR — University of Johannesburg (in progress)",
+  "BEd Senior & FET Phase — University of South Africa (in progress)",
+  "Higher Certificate, Adult Education & Training — UNISA",
+  "ServiceNow Certified System Administrator (CSA) — in progress",
+  "Google AI Certificate — via CAPACITI AI Skills Acceleration Programme",
+  "Betechified Data Analytics Scholarship & Capstone — selected cohort",
+  "ITIL 4 Foundation and ECBA — planned",
 ];
 
 const PRINCIPLES = [
-  "Automate the process only after it is worth doing.",
-  "Every dashboard must change a decision.",
-  "Design for the store colleague, not the slide deck.",
-  "Measure the benefit, then defend it.",
+  "Understand the process before configuring the tool.",
+  "Clean data first — every report depends on it.",
+  "Document it so the next person can run it.",
+  "Automate the repetitive, escalate the exceptions.",
 ];
 
 function Portfolio() {
