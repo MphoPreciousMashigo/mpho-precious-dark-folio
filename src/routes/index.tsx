@@ -635,9 +635,16 @@ function Portfolio() {
       </main>
 
       <footer className="border-t border-border bg-background">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 py-8 text-sm text-muted-foreground sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} Mpho Precious Mashigo. All rights reserved.</p>
-          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-8 sm:flex-row">
+          <div className="text-center sm:text-left">
+            <p className="text-sm text-muted-foreground">
+              &copy; {new Date().getFullYear()} Mpho Precious Mashigo. All rights reserved.
+            </p>
+            <p className="mt-1 font-mono text-xs text-muted-foreground">
+              Next-Generation Systems Architecture &amp; Intelligent Automation
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
             <a href={`mailto:${EMAIL}`} className="hover:text-foreground hover:underline">
               Email
             </a>
@@ -665,17 +672,10 @@ function Portfolio() {
             >
               Portfolio
             </a>
-            <a
-              href={RESUME_URL}
-              download
-              className="hover:text-foreground hover:underline"
-            >
+            <a href={RESUME_URL} download className="hover:text-foreground hover:underline">
               Download CV
             </a>
           </div>
-          <p className="font-mono text-xs">
-            Next-Generation Systems Architecture &amp; Intelligent Automation
-          </p>
         </div>
       </footer>
     </div>
