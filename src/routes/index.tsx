@@ -599,13 +599,13 @@ function Portfolio() {
               </p>
               <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Button asChild size="lg">
-                  <a href="mailto:hello@example.com">
+                  <a href={`mailto:${EMAIL}`}>
                     <Mail className="size-4" aria-hidden="true" />
-                    hello@example.com
+                    {EMAIL}
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener">
+                  <a href={LINKEDIN_URL} target="_blank" rel="noreferrer noopener">
                     LinkedIn profile
                     <ArrowUpRight className="size-4" aria-hidden="true" />
                   </a>
@@ -613,7 +613,7 @@ function Portfolio() {
                 <Button asChild size="lg" variant="ghost">
                   <a href={RESUME_URL} download>
                     <Download className="size-4" aria-hidden="true" />
-                    Download resume (PDF)
+                    Download CV (PDF)
                   </a>
                 </Button>
               </div>
