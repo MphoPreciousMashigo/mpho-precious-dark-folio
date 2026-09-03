@@ -425,11 +425,11 @@ function Portfolio() {
                 Selected impact
               </p>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                Case studies in context, action and result
+                Professional experience in context, action and result
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Illustrative placeholder engagements — swap the context, actions, metrics and
-                stack for your verified project history.
+                A selection of roles and projects that demonstrate the bridge between operational
+                discipline and emerging enterprise technology.
               </p>
             </Reveal>
 
