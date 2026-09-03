@@ -379,11 +379,12 @@ function Portfolio() {
               Expertise &amp; services
             </p>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-              Six capabilities, one operating outcome
+              Six capabilities, one systems outcome
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Engagements usually combine two or three of these — diagnosis, redesign, then
-              automation with a measurement layer around it.
+              My current capability spans ServiceNow ITSM, business process analysis, data
+              analytics, enterprise business systems and AI-driven automation — unified by the
+              goal of turning workflows into scalable ecosystems.
             </p>
           </Reveal>
 
