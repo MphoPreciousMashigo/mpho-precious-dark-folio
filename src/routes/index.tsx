@@ -527,33 +527,48 @@ function Portfolio() {
             <Reveal>
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">About</p>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                Retail is operational. So is my approach.
+                Architecting the next generation of intelligent systems.
               </h2>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  I&apos;m Mpho Precious Mashigo, an enterprise retail operations and intelligent
-                  automation technologist. My work sits between the shop floor and the systems
-                  that are supposed to support it — replenishment, stock integrity, supplier
-                  processes, reporting and the daily rhythm of trading.
+                  I am Mpho Precious Mashigo, a Next-Generation Systems Architect and Intelligent
+                  Automation Technologist. My journey is defined by a profound evolution—dismantling
+                  traditional technical silos to engineer interconnected, fluid, and highly automated
+                  digital structures.
                 </p>
                 <p>
-                  I&apos;ve spent my career untangling processes that grew faster than the tooling
-                  around them, then rebuilding them with automation, integration and clear
-                  ownership. The result is fewer manual handoffs, cleaner data and teams that
-                  spend their time on trade instead of admin.
+                  Operating at the cutting edge of modern infrastructure, I specialize in transforming
+                  raw enterprise workflows into scalable ecosystems. Currently, my expansion journey is
+                  driven by an elite, multi-track alignment: mastering data systems with BeTechified,
+                  structuring enterprise service management networks through ServiceNow CSA
+                  architectures, and accelerating my cloud intelligence capabilities across both the
+                  Capaciti Google AI and Netcampus AWS Cloud &amp; AI programs.
                 </p>
                 <p>
-                  This biography is placeholder copy — replace it with your own career narrative,
-                  qualifications and certifications.
+                  I build where data meets the cloud, driving automated value from day one.
                 </p>
+              </div>
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <Button asChild size="lg" variant="outline">
+                  <a href={LINKEDIN_URL} target="_blank" rel="noreferrer noopener">
+                    LinkedIn profile
+                    <ArrowUpRight className="size-4" aria-hidden="true" />
+                  </a>
+                </Button>
+                <Button asChild size="lg" variant="ghost">
+                  <a href={`mailto:${EMAIL}`}>
+                    <Mail className="size-4" aria-hidden="true" />
+                    {EMAIL}
+                  </a>
+                </Button>
               </div>
             </Reveal>
 
             <Reveal delay={120}>
               <div className="rounded-3xl border border-border bg-card/70 p-7">
-                <h3 className="font-display text-lg font-semibold">How I work</h3>
+                <h3 className="font-display text-lg font-semibold">Credentials &amp; current tracks</h3>
                 <ul className="mt-5 space-y-4">
-                  {PRINCIPLES.map((p) => (
+                  {CREDENTIALS.map((p) => (
                     <li key={p} className="flex items-start gap-3 text-sm text-muted-foreground">
                       <span
                         className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary"
