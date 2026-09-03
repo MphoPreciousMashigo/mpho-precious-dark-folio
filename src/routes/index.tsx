@@ -273,20 +273,20 @@ function Portfolio() {
                   className="mb-6 gap-2 border-primary/30 bg-primary/10 px-3 py-1 text-primary"
                 >
                   <Sparkles className="size-3.5" aria-hidden="true" />
-                  Enterprise Retail Operations &amp; Intelligent Automation
+                  Next-Generation Systems Architect &amp; Intelligent Automation Technologist
                 </Badge>
 
                 <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
                   <span className="text-gradient">Mpho Precious Mashigo</span>
                   <span className="mt-4 block text-2xl font-medium text-muted-foreground sm:text-3xl">
-                    I make retail operations run quieter, faster and measurably better.
+                    I build where data meets the cloud — driving automated value from day one.
                   </span>
                 </h1>
 
                 <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                  Operations technologist working at the intersection of store execution,
-                  process automation and data. I redesign the workflows behind trading —
-                  then automate what should never have been manual.
+                  Systems architect dismantling traditional silos to engineer interconnected,
+                  fluid digital structures. Specialising in ServiceNow ITSM, data analytics,
+                  cloud intelligence and AI-powered automation workflows.
                 </p>
 
                 <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -297,20 +297,22 @@ function Portfolio() {
                     </a>
                   </Button>
                   <Button asChild size="lg" variant="outline">
-                    <a href="#work">View selected impact</a>
+                    <a href={LINKEDIN_URL} target="_blank" rel="noreferrer noopener">
+                      LinkedIn
+                      <ArrowUpRight className="size-4" aria-hidden="true" />
+                    </a>
                   </Button>
                   <Button asChild size="lg" variant="ghost">
                     <a href={RESUME_URL} download>
                       <Download className="size-4" aria-hidden="true" />
-                      Download resume (PDF)
+                      Download CV
                     </a>
                   </Button>
-
                 </div>
 
                 <p className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
                   <MapPin className="size-4 text-accent" aria-hidden="true" />
-                  Based in South Africa — available for enterprise and remote engagements
+                  Johannesburg, South Africa — available for enterprise and remote engagements
                 </p>
               </Reveal>
 
