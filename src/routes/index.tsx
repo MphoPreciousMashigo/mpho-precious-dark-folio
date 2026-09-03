@@ -36,23 +36,32 @@ const PORTFOLIO_URL = "https://mpho-precious-dark-folio.lovable.app";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mpho Precious Mashigo | Retail Ops & Automation Technologist" },
+      { title: "Mpho Precious Mashigo | Systems Architect & Intelligent Automation" },
       {
         name: "description",
         content:
-          "Portfolio of Mpho Precious Mashigo — enterprise retail operations and intelligent automation technologist building resilient store systems, RPA workflows and operational intelligence.",
+          "Portfolio of Mpho Precious Mashigo — next-generation systems architect and intelligent automation technologist connecting ServiceNow ITSM, data analytics, cloud and AI.",
       },
       {
         property: "og:title",
-        content: "Mpho Precious Mashigo | Retail Ops & Automation Technologist",
+        content: "Mpho Precious Mashigo | Systems Architect & Intelligent Automation",
       },
       {
         property: "og:description",
         content:
-          "Enterprise retail operations, intelligent automation and operational intelligence — selected work, capabilities and contact.",
+          "Next-generation systems architect and intelligent automation technologist connecting ServiceNow ITSM, data analytics, cloud and AI.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:title",
+        content: "Mpho Precious Mashigo | Systems Architect & Intelligent Automation",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Next-generation systems architect and intelligent automation technologist connecting ServiceNow ITSM, data analytics, cloud and AI.",
+      },
     ],
   }),
   component: Portfolio,
