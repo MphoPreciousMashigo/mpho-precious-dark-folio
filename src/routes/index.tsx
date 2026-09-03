@@ -348,19 +348,19 @@ function Portfolio() {
           <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 md:grid-cols-3">
             {[
               {
-                icon: Gauge,
-                title: "Operations first",
-                body: "Technology only earns its place when the underlying process is sound. I start on the floor, not in the tool.",
+                icon: Network,
+                title: "Systems first",
+                body: "I dismantle technical silos by connecting workflows, data and cloud infrastructure into one coherent architecture.",
               },
               {
                 icon: Bot,
                 title: "Automation with judgement",
-                body: "Bots, integrations and AI applied where volume, risk and repetition justify them — with clear ownership.",
+                body: "Intelligent automation applied where repetition, risk and volume justify it — with human oversight and clear ownership.",
               },
               {
                 icon: BarChart3,
-                title: "Evidence to the boardroom",
-                body: "Benefits tracked in the language leaders trade in: availability, cost to serve, hours returned.",
+                title: "Data to decisions",
+                body: "Raw operational data becomes structured insight: dashboards, metrics and reporting that leaders can act on.",
               },
             ].map((item, i) => (
               <Reveal key={item.title} delay={i * 90}>
