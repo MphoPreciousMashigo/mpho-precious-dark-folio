@@ -31,27 +31,37 @@ const RESUME_URL = cvAsset.url;
 const EMAIL = "mphomash27@gmail.com";
 const LINKEDIN_URL = "https://www.linkedin.com/in/precious-mashigo-b68422200/";
 const GITHUB_URL = "https://github.com/MphoPreciousMashigo";
+const PORTFOLIO_URL = "https://mpho-precious-dark-folio.lovable.app";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mpho Precious Mashigo | Retail Ops & Automation Technologist" },
+      { title: "Mpho Precious Mashigo | Systems Architect & Intelligent Automation" },
       {
         name: "description",
         content:
-          "Portfolio of Mpho Precious Mashigo — enterprise retail operations and intelligent automation technologist building resilient store systems, RPA workflows and operational intelligence.",
+          "Portfolio of Mpho Precious Mashigo — next-generation systems architect and intelligent automation technologist connecting ServiceNow ITSM, data analytics, cloud and AI.",
       },
       {
         property: "og:title",
-        content: "Mpho Precious Mashigo | Retail Ops & Automation Technologist",
+        content: "Mpho Precious Mashigo | Systems Architect & Intelligent Automation",
       },
       {
         property: "og:description",
         content:
-          "Enterprise retail operations, intelligent automation and operational intelligence — selected work, capabilities and contact.",
+          "Next-generation systems architect and intelligent automation technologist connecting ServiceNow ITSM, data analytics, cloud and AI.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:title",
+        content: "Mpho Precious Mashigo | Systems Architect & Intelligent Automation",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Next-generation systems architect and intelligent automation technologist connecting ServiceNow ITSM, data analytics, cloud and AI.",
+      },
     ],
   }),
   component: Portfolio,
@@ -273,20 +283,20 @@ function Portfolio() {
                   className="mb-6 gap-2 border-primary/30 bg-primary/10 px-3 py-1 text-primary"
                 >
                   <Sparkles className="size-3.5" aria-hidden="true" />
-                  Enterprise Retail Operations &amp; Intelligent Automation
+                  Next-Generation Systems Architect &amp; Intelligent Automation Technologist
                 </Badge>
 
                 <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
                   <span className="text-gradient">Mpho Precious Mashigo</span>
                   <span className="mt-4 block text-2xl font-medium text-muted-foreground sm:text-3xl">
-                    I make retail operations run quieter, faster and measurably better.
+                    I build where data meets the cloud — driving automated value from day one.
                   </span>
                 </h1>
 
                 <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                  Operations technologist working at the intersection of store execution,
-                  process automation and data. I redesign the workflows behind trading —
-                  then automate what should never have been manual.
+                  Systems architect dismantling traditional silos to engineer interconnected,
+                  fluid digital structures. Specialising in ServiceNow ITSM, data analytics,
+                  cloud intelligence and AI-powered automation workflows.
                 </p>
 
                 <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -297,20 +307,22 @@ function Portfolio() {
                     </a>
                   </Button>
                   <Button asChild size="lg" variant="outline">
-                    <a href="#work">View selected impact</a>
+                    <a href={LINKEDIN_URL} target="_blank" rel="noreferrer noopener">
+                      LinkedIn
+                      <ArrowUpRight className="size-4" aria-hidden="true" />
+                    </a>
                   </Button>
                   <Button asChild size="lg" variant="ghost">
                     <a href={RESUME_URL} download>
                       <Download className="size-4" aria-hidden="true" />
-                      Download resume (PDF)
+                      Download CV
                     </a>
                   </Button>
-
                 </div>
 
                 <p className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
                   <MapPin className="size-4 text-accent" aria-hidden="true" />
-                  Based in South Africa — available for enterprise and remote engagements
+                  Johannesburg, South Africa — available for enterprise and remote engagements
                 </p>
               </Reveal>
 
@@ -333,7 +345,7 @@ function Portfolio() {
                     ))}
                   </dl>
                   <p className="mt-7 border-t border-border pt-5 text-xs text-muted-foreground">
-                    Figures are editable placeholders — replace with verified numbers.
+                    Across operations, asset management, quality assurance and developing enterprise technology capability.
                   </p>
                 </div>
               </Reveal>
@@ -346,19 +358,19 @@ function Portfolio() {
           <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 md:grid-cols-3">
             {[
               {
-                icon: Gauge,
-                title: "Operations first",
-                body: "Technology only earns its place when the underlying process is sound. I start on the floor, not in the tool.",
+                icon: Network,
+                title: "Systems first",
+                body: "I dismantle technical silos by connecting workflows, data and cloud infrastructure into one coherent architecture.",
               },
               {
                 icon: Bot,
                 title: "Automation with judgement",
-                body: "Bots, integrations and AI applied where volume, risk and repetition justify them — with clear ownership.",
+                body: "Intelligent automation applied where repetition, risk and volume justify it — with human oversight and clear ownership.",
               },
               {
                 icon: BarChart3,
-                title: "Evidence to the boardroom",
-                body: "Benefits tracked in the language leaders trade in: availability, cost to serve, hours returned.",
+                title: "Data to decisions",
+                body: "Raw operational data becomes structured insight: dashboards, metrics and reporting that leaders can act on.",
               },
             ].map((item, i) => (
               <Reveal key={item.title} delay={i * 90}>
@@ -377,11 +389,12 @@ function Portfolio() {
               Expertise &amp; services
             </p>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-              Six capabilities, one operating outcome
+              Six capabilities, one systems outcome
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Engagements usually combine two or three of these — diagnosis, redesign, then
-              automation with a measurement layer around it.
+              My current capability spans ServiceNow ITSM, business process analysis, data
+              analytics, enterprise business systems and AI-driven automation — unified by the
+              goal of turning workflows into scalable ecosystems.
             </p>
           </Reveal>
 
@@ -422,11 +435,11 @@ function Portfolio() {
                 Selected impact
               </p>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                Case studies in context, action and result
+                Professional experience in context, action and result
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Illustrative placeholder engagements — swap the context, actions, metrics and
-                stack for your verified project history.
+                A selection of roles and projects that demonstrate the bridge between operational
+                discipline and emerging enterprise technology.
               </p>
             </Reveal>
 
@@ -527,33 +540,48 @@ function Portfolio() {
             <Reveal>
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">About</p>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                Retail is operational. So is my approach.
+                Architecting the next generation of intelligent systems.
               </h2>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  I&apos;m Mpho Precious Mashigo, an enterprise retail operations and intelligent
-                  automation technologist. My work sits between the shop floor and the systems
-                  that are supposed to support it — replenishment, stock integrity, supplier
-                  processes, reporting and the daily rhythm of trading.
+                  I am Mpho Precious Mashigo, a Next-Generation Systems Architect and Intelligent
+                  Automation Technologist. My journey is defined by a profound evolution—dismantling
+                  traditional technical silos to engineer interconnected, fluid, and highly automated
+                  digital structures.
                 </p>
                 <p>
-                  I&apos;ve spent my career untangling processes that grew faster than the tooling
-                  around them, then rebuilding them with automation, integration and clear
-                  ownership. The result is fewer manual handoffs, cleaner data and teams that
-                  spend their time on trade instead of admin.
+                  Operating at the cutting edge of modern infrastructure, I specialize in transforming
+                  raw enterprise workflows into scalable ecosystems. Currently, my expansion journey is
+                  driven by an elite, multi-track alignment: mastering data systems with BeTechified,
+                  structuring enterprise service management networks through ServiceNow CSA
+                  architectures, and accelerating my cloud intelligence capabilities across both the
+                  Capaciti Google AI and Netcampus AWS Cloud &amp; AI programs.
                 </p>
                 <p>
-                  This biography is placeholder copy — replace it with your own career narrative,
-                  qualifications and certifications.
+                  I build where data meets the cloud, driving automated value from day one.
                 </p>
+              </div>
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <Button asChild size="lg" variant="outline">
+                  <a href={LINKEDIN_URL} target="_blank" rel="noreferrer noopener">
+                    LinkedIn profile
+                    <ArrowUpRight className="size-4" aria-hidden="true" />
+                  </a>
+                </Button>
+                <Button asChild size="lg" variant="ghost">
+                  <a href={`mailto:${EMAIL}`}>
+                    <Mail className="size-4" aria-hidden="true" />
+                    {EMAIL}
+                  </a>
+                </Button>
               </div>
             </Reveal>
 
             <Reveal delay={120}>
               <div className="rounded-3xl border border-border bg-card/70 p-7">
-                <h3 className="font-display text-lg font-semibold">How I work</h3>
+                <h3 className="font-display text-lg font-semibold">Credentials &amp; current tracks</h3>
                 <ul className="mt-5 space-y-4">
-                  {PRINCIPLES.map((p) => (
+                  {CREDENTIALS.map((p) => (
                     <li key={p} className="flex items-start gap-3 text-sm text-muted-foreground">
                       <span
                         className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary"
@@ -575,22 +603,21 @@ function Portfolio() {
             <Reveal>
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">Contact</p>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                Have a process that shouldn&apos;t still be manual?
+                Let&apos;s build where data meets the cloud.
               </h2>
               <p className="mx-auto mt-5 max-w-xl text-muted-foreground">
-                Available for retail operations reviews, automation programmes and interim
-                delivery leadership. Replace the details below with your preferred contact
-                channels.
+                Available for ServiceNow, ITSM, business process analysis, data analytics and
+                intelligent automation opportunities — enterprise, project-based or remote.
               </p>
               <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Button asChild size="lg">
-                  <a href="mailto:hello@example.com">
+                  <a href={`mailto:${EMAIL}`}>
                     <Mail className="size-4" aria-hidden="true" />
-                    hello@example.com
+                    {EMAIL}
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener">
+                  <a href={LINKEDIN_URL} target="_blank" rel="noreferrer noopener">
                     LinkedIn profile
                     <ArrowUpRight className="size-4" aria-hidden="true" />
                   </a>
@@ -598,7 +625,7 @@ function Portfolio() {
                 <Button asChild size="lg" variant="ghost">
                   <a href={RESUME_URL} download>
                     <Download className="size-4" aria-hidden="true" />
-                    Download resume (PDF)
+                    Download CV (PDF)
                   </a>
                 </Button>
               </div>
@@ -608,11 +635,47 @@ function Portfolio() {
       </main>
 
       <footer className="border-t border-border bg-background">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 py-8 text-sm text-muted-foreground sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} Mpho Precious Mashigo. All rights reserved.</p>
-          <p className="font-mono text-xs">
-            Enterprise Retail Operations &amp; Intelligent Automation
-          </p>
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-8 sm:flex-row">
+          <div className="text-center sm:text-left">
+            <p className="text-sm text-muted-foreground">
+              &copy; {new Date().getFullYear()} Mpho Precious Mashigo. All rights reserved.
+            </p>
+            <p className="mt-1 font-mono text-xs text-muted-foreground">
+              Next-Generation Systems Architecture &amp; Intelligent Automation
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+            <a href={`mailto:${EMAIL}`} className="hover:text-foreground hover:underline">
+              Email
+            </a>
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="hover:text-foreground hover:underline"
+            >
+              LinkedIn
+            </a>
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="hover:text-foreground hover:underline"
+            >
+              GitHub
+            </a>
+            <a
+              href={PORTFOLIO_URL}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="hover:text-foreground hover:underline"
+            >
+              Portfolio
+            </a>
+            <a href={RESUME_URL} download className="hover:text-foreground hover:underline">
+              Download CV
+            </a>
+          </div>
         </div>
       </footer>
     </div>
