@@ -593,12 +593,11 @@ function Portfolio() {
             <Reveal>
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">Contact</p>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                Have a process that shouldn&apos;t still be manual?
+                Let&apos;s build where data meets the cloud.
               </h2>
               <p className="mx-auto mt-5 max-w-xl text-muted-foreground">
-                Available for retail operations reviews, automation programmes and interim
-                delivery leadership. Replace the details below with your preferred contact
-                channels.
+                Available for ServiceNow, ITSM, business process analysis, data analytics and
+                intelligent automation opportunities — enterprise, project-based or remote.
               </p>
               <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Button asChild size="lg">
