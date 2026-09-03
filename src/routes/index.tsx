@@ -605,18 +605,32 @@ function Portfolio() {
 
             <Reveal delay={120}>
               <div className="rounded-3xl border border-border bg-card/70 p-7">
-                <h3 className="font-display text-lg font-semibold">Credentials &amp; current tracks</h3>
-                <ul className="mt-5 space-y-4">
-                  {CREDENTIALS.map((p) => (
-                    <li key={p} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <span
-                        className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary"
-                        aria-hidden="true"
-                      />
-                      {p}
-                    </li>
+                <h3 className="font-display text-lg font-semibold">
+                  Credentials &amp; professional development
+                </h3>
+                <div className="mt-6 space-y-6">
+                  {CREDENTIALS.map((section) => (
+                    <div key={section.category}>
+                      <h4 className="font-mono text-xs uppercase tracking-wider text-accent">
+                        {section.category}
+                      </h4>
+                      <ul className="mt-3 space-y-3">
+                        {section.items.map((item) => (
+                          <li
+                            key={item}
+                            className="flex items-start gap-3 text-sm text-muted-foreground"
+                          >
+                            <span
+                              className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary"
+                              aria-hidden="true"
+                            />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             </Reveal>
           </div>
