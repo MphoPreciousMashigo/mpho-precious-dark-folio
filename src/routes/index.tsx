@@ -335,7 +335,7 @@ function Portfolio() {
                     ))}
                   </dl>
                   <p className="mt-7 border-t border-border pt-5 text-xs text-muted-foreground">
-                    Figures are editable placeholders — replace with verified numbers.
+                    Across operations, asset management, quality assurance and developing enterprise technology capability.
                   </p>
                 </div>
               </Reveal>
