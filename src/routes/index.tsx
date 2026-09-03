@@ -174,13 +174,39 @@ const STACK = [
 ];
 
 const CREDENTIALS = [
-  "Artificial Intelligence in the 4IR — University of Johannesburg (in progress)",
-  "BEd Senior & FET Phase — University of South Africa (in progress)",
-  "Higher Certificate, Adult Education & Training — UNISA",
-  "ServiceNow Certified System Administrator (CSA) — in progress",
-  "Google AI Certificate — via CAPACITI AI Skills Acceleration Programme",
-  "Betechified Data Analytics Scholarship & Capstone — selected cohort",
-  "ITIL 4 Foundation and ECBA — planned",
+  {
+    category: "Technology, AI & Cloud",
+    items: [
+      "Google AI Essentials Specialization — Google / Coursera | Completed September 2026",
+      "AWS Cloud & AI Training Programme — Netcampus / AWS Skills Center | Enrolled",
+      "Artificial Intelligence in the Fourth Industrial Revolution (4IR) — University of Johannesburg",
+      "ServiceNow Certified System Administrator (CSA) — Certification Pathway",
+      "ITIL 4 Foundation — Professional Development Pathway",
+    ],
+  },
+  {
+    category: "Data, Business & Process",
+    items: [
+      "Betechified Data Analytics Scholarship & Capstone — Selected Cohort",
+      "ECBA (Entry Certificate in Business Analysis) — Business Analysis Development Pathway",
+      "Marketing Management, N4–N6 — Ekurhuleni East College",
+    ],
+  },
+  {
+    category: "Business & Professional Foundations",
+    items: [
+      "Higher Certificate in Adult Education & Training — University of South Africa",
+      "Bachelor of Education, Senior & FET Phase — University of South Africa",
+    ],
+  },
+  {
+    category: "Professional Certifications",
+    items: [
+      "Business Administration Certificate — EduCourse Learning",
+      "Virtual Assistant Certificate — EduCourse Learning",
+      "120-Hour TEFL International Certificate — TEFL Professional Institute",
+    ],
+  },
 ];
 
 const PRINCIPLES = [
@@ -579,18 +605,32 @@ function Portfolio() {
 
             <Reveal delay={120}>
               <div className="rounded-3xl border border-border bg-card/70 p-7">
-                <h3 className="font-display text-lg font-semibold">Credentials &amp; current tracks</h3>
-                <ul className="mt-5 space-y-4">
-                  {CREDENTIALS.map((p) => (
-                    <li key={p} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <span
-                        className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary"
-                        aria-hidden="true"
-                      />
-                      {p}
-                    </li>
+                <h3 className="font-display text-lg font-semibold">
+                  Credentials &amp; professional development
+                </h3>
+                <div className="mt-6 space-y-6">
+                  {CREDENTIALS.map((section) => (
+                    <div key={section.category}>
+                      <h4 className="font-mono text-xs uppercase tracking-wider text-accent">
+                        {section.category}
+                      </h4>
+                      <ul className="mt-3 space-y-3">
+                        {section.items.map((item) => (
+                          <li
+                            key={item}
+                            className="flex items-start gap-3 text-sm text-muted-foreground"
+                          >
+                            <span
+                              className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary"
+                              aria-hidden="true"
+                            />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             </Reveal>
           </div>
