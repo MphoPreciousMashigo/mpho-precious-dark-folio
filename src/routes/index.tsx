@@ -31,6 +31,7 @@ const RESUME_URL = cvAsset.url;
 const EMAIL = "mphomash27@gmail.com";
 const LINKEDIN_URL = "https://www.linkedin.com/in/precious-mashigo-b68422200/";
 const GITHUB_URL = "https://github.com/MphoPreciousMashigo";
+const PORTFOLIO_URL = "https://mpho-precious-dark-folio.lovable.app";
 
 export const Route = createFileRoute("/")({
   head: () => ({
