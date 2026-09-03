@@ -625,10 +625,46 @@ function Portfolio() {
       </main>
 
       <footer className="border-t border-border bg-background">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 py-8 text-sm text-muted-foreground sm:flex-row">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 py-8 text-sm text-muted-foreground sm:flex-row">
           <p>&copy; {new Date().getFullYear()} Mpho Precious Mashigo. All rights reserved.</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+            <a href={`mailto:${EMAIL}`} className="hover:text-foreground hover:underline">
+              Email
+            </a>
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="hover:text-foreground hover:underline"
+            >
+              LinkedIn
+            </a>
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="hover:text-foreground hover:underline"
+            >
+              GitHub
+            </a>
+            <a
+              href={PORTFOLIO_URL}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="hover:text-foreground hover:underline"
+            >
+              Portfolio
+            </a>
+            <a
+              href={RESUME_URL}
+              download
+              className="hover:text-foreground hover:underline"
+            >
+              Download CV
+            </a>
+          </div>
           <p className="font-mono text-xs">
-            Enterprise Retail Operations &amp; Intelligent Automation
+            Next-Generation Systems Architecture &amp; Intelligent Automation
           </p>
         </div>
       </footer>
